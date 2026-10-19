@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Sora:wght@400;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#13121c;color:#e4e1ef;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'surface': '#13121c', 'surface-variant': '#34343e', 'on-primary': '#3c0091', 'secondary-fixed-dim': '#4cd7f6', 'surface-container': '#1f1f29', 'primary-container': '#a078ff', 'tertiary-fixed': '#f0dbff', 'on-surface-variant': '#cbc3d7', 'on-error-container': '#ffdad6', 'secondary-fixed': '#acedff', 'on-tertiary-fixed-variant': '#6900b3', 'surface-dim': '#13121c', 'secondary': '#4cd7f6', 'surface-bright': '#393843', 'primary-fixed-dim': '#d0bcff', 'error-container': '#93000a', 'on-secondary-fixed': '#001f26', 'on-tertiary-container': '#400071', 'inverse-on-surface': '#302f3a', 'tertiary': '#ddb7ff', 'inverse-primary': '#6d3bd7', 'on-primary-fixed-variant': '#5516be', 'secondary-container': '#03b5d3', 'on-primary-fixed': '#23005c', 'surface-container-lowest': '#0d0d17', 'primary-fixed': '#e9ddff', 'on-primary-container': '#340080', 'primary': '#d0bcff', 'on-tertiary': '#490080', 'surface-tint': '#d0bcff', 'on-secondary-fixed-variant': '#004e5c', 'on-secondary-container': '#00424e', 'background': '#13121c', 'on-tertiary-fixed': '#2c0051', 'on-surface': '#e4e1ef', 'tertiary-container': '#b76dff', 'inverse-surface': '#e4e1ef', 'tertiary-fixed-dim': '#ddb7ff', 'outline': '#958ea0', 'surface-container-low': '#1b1b24', 'surface-container-highest': '#34343e', 'outline-variant': '#494454', 'error': '#ffb4ab', 'on-background': '#e4e1ef', 'surface-container-high': '#292933', 'on-error': '#690005', 'on-secondary': '#003640' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-md': '1rem', 'space-sm': '0.5rem', 'margin-mobile': '1rem', 'margin': '1rem', 'space-xs': '0.25rem', 'margin-desktop': '2.5rem', 'space-xl': '2.5rem', 'gutter': '1rem', 'gutter-mobile': '0.75rem', 'gutter-desktop': '1.5rem', 'space-lg': '1.5rem' }, fontFamily: { 'label-md': ['Space Grotesk'], 'body-lg': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Sora'], 'body-sm': ['Plus Jakarta Sans'], 'label-sm': ['Space Grotesk'], 'display-hero': ['Sora'], 'headline-md': ['Sora'], 'headline-lg-mobile': ['Sora'], 'label-lg': ['Space Grotesk'], 'headline-sm': ['Sora'], 'headline-lg': ['Sora'], 'body-md': ['Plus Jakarta Sans'] }, fontSize: { 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '500' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'display-hero-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.02em', fontWeight: '700' }], 'body-sm': ['12px', { lineHeight: '18px', fontWeight: '400' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.08em', fontWeight: '600' }], 'display-hero': ['56px', { lineHeight: '64px', letterSpacing: '-0.03em', fontWeight: '700' }], 'headline-md': ['22px', { lineHeight: '30px', letterSpacing: '-0.01em', fontWeight: '600' }], 'headline-lg-mobile': ['26px', { lineHeight: '34px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.02em', fontWeight: '500' }], 'headline-sm': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em', fontWeight: '600' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }] } } } }</script></head><body class="bg-surface text-on-surface min-h-screen flex flex-col antialiased"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_4px_20px_rgba(0,0,0,0.4)]"><div class="h-16 px-4 flex items-center justify-between gap-3"><div class="flex items-center gap-3"><button aria-label="Go Back" class="w-11 h-11 -ml-1 rounded-full flex items-center justify-center text-on-surface hover:text-secondary active:scale-90 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="MeloDhun Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XWviRYVHClgUMrVOWnYzaglUQv4vBylaE1xfNl0tH4cc9yS_xYO2-FKJM6C02XwGroNIH8ZcvdxsO1GKWX-jqSEUWaTpjgarnpzqU-unNA6Uydqj15b_4rNTJevqeGefY0GrmDp9IN37DFW1OEvt_MKG0MnvfG2IA5T9ix47qH0MHV8ICebh6nvbN8ON3JkOTB_ndc7ujjjjXg05hkG5QfrhUwAT6EQT7YFua8VfmYQ6pmU1zBP3xsPgc"/><h1 class="font-headline-sm text-headline-sm font-semibold tracking-tight text-white truncate max-w-[170px]">Now Playing Detail</h1></div><div class="flex items-center gap-2"><button aria-label="Share" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-white transition-colors"><span class="material-symbols-outlined text-[20px]">share</span></button><button aria-label="User Profile" class="w-8 h-8 rounded-full ring-2 ring-primary/30 p-0.5"><img alt="Profile" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeZZFKirLcnELVvZLprp9_Uk61_HkozkWT20y0R_ohhAMdDLorbHL2bu565nRv_50Qhb5KJmSgysnFXjjUGUliAM-7M8zJF-EAu5bCHKbT0JRrD4xcRVDOV5scLQGFhwpmDMIPKrnqC_ElGiSRrm4Q6J0J2F4v5KCoi3_yBxTBRlnr7JenoPtS2rT6kSeVicHSIA4-fQ5swbLoi2aOpe7u5izhmHmwHYAcRMtKvCwAjrdKoMaR1h5N"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full relative select-none pb-8 overflow-hidden">
+<!-- Dynamic Chromatic Radial Scrim Background -->
+<div class="pointer-events-none absolute -top-24 left-1/2 -translate-x-1/2 w-[340px] h-[340px] bg-primary/20 rounded-full blur-[90px] -z-10"></div>
+<div class="pointer-events-none absolute top-48 -right-20 w-[260px] h-[260px] bg-secondary/15 rounded-full blur-[80px] -z-10"></div>
+<!-- In-Screen Header Bar -->
+<div class="px-margin flex items-center justify-between pt-1 pb-3">
+<button aria-label="Minimize player" class="w-10 h-10 rounded-full bg-surface-container/60 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary active:scale-95 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[22px]">keyboard_arrow_down</span>
+</button>
+<div class="flex flex-col items-center max-w-[200px] text-center">
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Playing From Album</span>
+<span class="font-label-md text-label-md text-on-surface font-medium truncate w-full">Ultimate Desi &amp; Global Beats</span>
+</div>
+<button aria-label="More track options" class="w-10 h-10 rounded-full bg-surface-container/60 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-secondary active:scale-95 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Hero: Glowing Vinyl & Artwork Module -->
+<div class="relative px-margin mt-1 flex justify-center items-center">
+<div class="relative w-64 h-64 sm:w-72 sm:h-72 flex items-center justify-center">
+<!-- Vinyl disc peek / underlay -->
+<div class="absolute w-[94%] h-[94%] rounded-full bg-surface-container-lowest shadow-2xl flex items-center justify-center transition-transform duration-1000 origin-center" id="vinyl-disc" style="transform: rotate(45deg);">
+<!-- Vinyl grooves via repeating radial gradient -->
+<div class="w-full h-full rounded-full opacity-40" style="background: repeating-radial-gradient(circle at center, #1b1b24 0, #1b1b24 3px, #0d0d17 4px, #0d0d17 7px);"></div>
+<!-- Center spindle label circle -->
+<div class="absolute w-20 h-20 rounded-full bg-surface-variant flex items-center justify-center">
+<div class="w-5 h-5 rounded-full bg-surface"></div>
+</div>
+</div>
+<!-- Glowing artwork container -->
+<div class="relative z-10 w-full h-full rounded-xl overflow-hidden shadow-[0_16px_40px_rgba(0,0,0,0.6)] group">
+<img class="w-full h-full object-cover" data-alt="Vibrant album artwork for an acoustic electronic Bollywood lofi fusion track. Glowing saffron orange, electric violet, and deep cyan neon hues blend seamlessly in a serene midnight skyline with abstract music soundwave trails and floating dust particles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpgd_7DtZFEzmj4WltScdDvmIv8FFZqPbCj4pINPCotjIT-9Q1Xv0hIc-BQJj_yB5ImG0AhZA_X7Svpa8ra20d3ru_xqsueI-uMd4Is9RqLcWLHgdDdyDohoYgPyuvU6mUN5FE5q15I6bcygsLRBETBdMdj4-C0IWBBAfwoOpFswy_9LZ90LDMWWd0PrAH9wF02dF0Syjp_lLNE6gFjNLPkrS8Y27ZBMHKk0Ld8C1nBm_l0D7Z7dmt"/>
+<!-- Subtle inner sheen overlay -->
+<div class="absolute inset-0 bg-gradient-to-tr from-surface-container-lowest/60 via-transparent to-white/10 pointer-events-none"></div>
+<!-- Live Acoustic Frequency Watermark Badge -->
+<div class="absolute top-3 left-3 px-2 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center gap-1.5 shadow-md">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface">96 kHz</span>
+</div>
+<button aria-label="Toggle Spatial Audio" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary hover:text-white transition-colors" id="spatial-toggle">
+<span class="material-symbols-outlined text-[18px]">surround_sound</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Audio Format & High-Res Telemetry Tags -->
+<div class="flex items-center justify-center gap-2 mt-4 px-margin">
+<div class="px-2.5 py-0.5 rounded-full bg-surface-container-high/80 backdrop-blur-md flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[14px]">graphic_eq</span>
+<span class="font-label-sm text-label-sm text-secondary">Hi-Res Lossless 24-bit</span>
+</div>
+<div class="px-2 py-0.5 rounded-full bg-surface-container-high/80 backdrop-blur-md flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary text-[14px]">spatial_audio_off</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Dolby Atmos</span>
+</div>
+</div>
+<!-- Track Metadata & Action Tray -->
+<div class="px-margin mt-3 flex items-center justify-between">
+<div class="flex flex-col min-w-0 pr-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate">Kesariya (Lofi Midnight Mix)</h2>
+<p class="font-body-md text-body-md text-on-surface-variant truncate">Arijit Singh, Pritam, MeloDhun Re-Echo</p>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<button aria-label="Favorite Track" class="w-11 h-11 rounded-full bg-surface-container/70 flex items-center justify-center text-tertiary-container hover:scale-105 active:scale-90 transition-all shadow-[0_0_16px_-2px_rgba(183,109,255,0.4)]" id="btn-fav">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+<button aria-label="Add to Playlist" class="w-11 h-11 rounded-full bg-surface-container/70 flex items-center justify-center text-on-surface-variant hover:text-on-surface active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[22px]">playlist_add</span>
+</button>
+</div>
+</div>
+<!-- Dynamic Interactive Soundwave Equalizer -->
+<div class="px-margin mt-4">
+<div class="bg-surface-container-low/70 rounded-xl p-3 flex flex-col gap-1 backdrop-blur-md shadow-inner">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] animate-pulse">equalizer</span>
+          AUDIO TELEMETRY SPECTRUM
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">420 kbps VBR</span>
+</div>
+<!-- Soundwave Bars Container -->
+<div class="h-10 flex items-end justify-between gap-[3px] pt-1 px-1" id="eq-visualizer">
+<!-- Bars injected and animated dynamically via JS -->
+</div>
+</div>
+</div>
+<!-- Scannable Draggable Progress Scrubber -->
+<div class="px-margin mt-3 flex flex-col gap-1.5">
+<div class="relative w-full py-2 cursor-pointer flex items-center" id="scrub-container">
+<!-- Inactive rail -->
+<div class="w-full h-1.5 rounded-full bg-surface-variant/70 overflow-hidden relative">
+<!-- Active track gradient fill -->
+<div class="h-full bg-gradient-to-r from-primary-container via-primary to-secondary rounded-full shadow-[0_0_12px_rgba(76,215,246,0.6)]" id="scrub-progress" style="width: 78.8%;"></div>
+</div>
+<!-- Scrubber Thumb -->
+<div class="absolute top-1/2 -translate-y-1/2 -ml-2 w-4 h-4 rounded-full bg-white shadow-[0_0_14px_4px_rgba(76,215,246,0.7)] flex items-center justify-center pointer-events-none transition-transform" id="scrub-thumb" style="left: 78.8%;">
+<div class="w-1.5 h-1.5 rounded-full bg-secondary-container"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant px-0.5">
+<span class="text-secondary font-medium" id="time-current">02:44</span>
+<span>03:28</span>
+</div>
+</div>
+<!-- Primary Playback Controls Module -->
+<div class="px-margin mt-2 flex items-center justify-between">
+<!-- Shuffle Toggle (Active with Dot) -->
+<button aria-label="Toggle Shuffle" class="relative w-11 h-11 rounded-full flex flex-col items-center justify-center text-secondary active:scale-90 transition-transform" id="btn-shuffle">
+<span class="material-symbols-outlined text-[22px]">shuffle</span>
+<span class="w-1 h-1 rounded-full bg-secondary absolute bottom-2"></span>
+</button>
+<!-- Previous Track -->
+<button aria-label="Previous Track" class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface hover:text-secondary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">skip_previous</span>
+</button>
+<!-- Glowing Master Play / Pause Trigger -->
+<button aria-label="Play/Pause" class="relative w-16 h-16 rounded-full bg-gradient-to-tr from-primary-container via-primary to-secondary-container flex items-center justify-center text-on-primary shadow-[0_0_24px_rgba(160,120,255,0.6),0_0_10px_rgba(76,215,246,0.4)] active:scale-95 transition-all" id="btn-play">
+<span class="material-symbols-outlined text-[34px]" id="play-icon" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<!-- Next Track -->
+<button aria-label="Next Track" class="w-12 h-12 rounded-full flex items-center justify-center text-on-surface hover:text-secondary active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[30px]" style="font-variation-settings: 'FILL' 1;">skip_next</span>
+</button>
+<!-- Repeat Toggle (Repeat-One Active) -->
+<button aria-label="Toggle Repeat Mode" class="relative w-11 h-11 rounded-full flex flex-col items-center justify-center text-primary active:scale-90 transition-transform" id="btn-repeat">
+<span class="material-symbols-outlined text-[22px]">repeat_one</span>
+<span class="w-1 h-1 rounded-full bg-primary absolute bottom-2"></span>
+</button>
+</div>
+<!-- Route / Device Selector Bar & Volume Hub -->
+<div class="px-margin mt-4">
+<div class="bg-surface-container-low/80 backdrop-blur-md rounded-xl p-3 flex flex-col gap-2.5 shadow-md">
+<!-- Device Selector Indicator -->
+<div class="flex items-center justify-between">
+<button class="flex items-center gap-2 text-left group">
+<div class="w-7 h-7 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[17px]">headphones</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Audio Output</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold group-hover:text-secondary transition-colors">MeloDhun Buds Pro</span>
+</div>
+</button>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+          Connected
+        </span>
+</div>
+<!-- Real Volume Level Bar -->
+<div class="flex items-center gap-2.5 pt-1">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">volume_down</span>
+<div class="relative w-full h-1.5 rounded-full bg-surface-variant overflow-hidden cursor-pointer" id="vol-slider">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 72%;"></div>
+</div>
+<span class="material-symbols-outlined text-on-surface text-[18px]">volume_up</span>
+</div>
+</div>
+</div>
+<!-- Interactive Dual-Panel Sheet: Realtime Karaoke & Up-Next Queue -->
+<div class="px-margin mt-4">
+<div class="bg-surface-container/70 backdrop-blur-xl rounded-2xl overflow-hidden shadow-xl">
+<!-- Sheet Tabs Header -->
+<div class="flex items-center p-1.5 bg-surface-container-high/60 gap-1.5">
+<button class="flex-1 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors shadow-sm" id="tab-lyrics">
+<span class="material-symbols-outlined text-secondary text-[16px]">mic_external_on</span>
+<span>Live Lyrics</span>
+</button>
+<button class="flex-1 py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 transition-colors hover:text-on-surface" id="tab-queue">
+<span class="material-symbols-outlined text-[16px]">queue_music</span>
+<span>Up Next (12)</span>
+</button>
+</div>
+<!-- Content Area 1: Synchronized Karaoke Lyrics -->
+<div class="p-4 flex flex-col gap-2.5" id="content-lyrics">
+<div class="text-on-surface-variant/40 font-body-sm text-body-sm transition-opacity">
+          Rabba ne tujhko banane mein, kar di hai husn ki khaali tijoriyan...
+        </div>
+<div class="text-on-surface-variant/60 font-body-md text-body-md transition-opacity">
+          Kajal ki siyahi se likhi hai tune jaane kitno ki luv storiyan...
+        </div>
+<!-- Active Glowing Karaoke Verse -->
+<div class="p-2.5 rounded-xl bg-surface-container-highest/60 flex items-center justify-between shadow-[0_0_14px_rgba(76,215,246,0.2)]">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold tracking-normal leading-snug">
+              Kesariya tera ishq hai piya...
+            </span>
+<span class="font-body-md text-body-md text-tertiary">
+              Rang jaaun jo main haath lagaun
+            </span>
+</div>
+<span class="material-symbols-outlined text-secondary animate-bounce text-[20px]">music_note</span>
+</div>
+<div class="text-on-surface-variant/70 font-body-md text-body-md">
+          Din beete saara teri fikr mein, rain saari saari guzre...
+        </div>
+</div>
+<!-- Content Area 2: Up Next Queue Drawer (Hidden by default, toggleable) -->
+<div class="p-3 hidden flex flex-col gap-2" id="content-queue">
+<div class="font-label-sm text-label-sm text-on-surface-variant px-1 uppercase tracking-wider">Playing Next</div>
+<!-- Queue Item 1 -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-high/50 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-11 h-11 rounded-lg overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Album cover for Brown Munde by AP Dhillon with sleek urban Punjabi typography, deep moody cyan backlights and high-grain modern aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpbSQde0nxuEzCxHmTLmF7B6bdoHcyG0ahtzTR5UNTx3aGiNvAquudC6Drszgs3MXBwuAJP-aDph95mm4yzp7hxefpoef-kB5lgpN0zv5jffHAN5CC059nT5fu2YYuuNz_WTo7qzeA7fgLxOKxVfdgoVEjA3AnRVMDzpUWETzU0sqL1uanTBQrL4i9DAvPdBVbXJTAN2me97DmVjor_AbW3a8JMyx0AiMLfQ5z_MRyAeewGo5Mb3LO"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Brown Munde</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">AP Dhillon, Gurinder Gill, Shinda Kahlon</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">04:22</span>
+<button aria-label="Queue options" class="p-1 text-on-surface-variant hover:text-white">
+<span class="material-symbols-outlined text-[18px]">drag_handle</span>
+</button>
+</div>
+</div>
+<!-- Queue Item 2 -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-high/50 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-11 h-11 rounded-lg overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Album art for Levitating by Dua Lipa, neon retro disco styling, celestial sparkle accents with deep violet ambient studio light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBv7PgO4oG9a4jQ6xIplfTXMiEV615etj__WuEPjGvJvGVdOEOt_oLTFuBr2GCBZ6AzF9oFQa0T_-kh2YijzKmFbjuMbDveq5xY139_AQP6xFhlMzk6_zO_ff9hqSOTh8MmCz0RY9PDoa1KmX2PB8u8_VwHyksccZPcB4Qf0wYN7Rjq42447VRRcwAT1pAHqnJJ9YI1OZ85uyjwYjAjpldHMiNHJqeWvnxNAXdFtTuldc7lXzv4g9VT"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Levitating</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Dua Lipa • Future Nostalgia</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">03:23</span>
+<button aria-label="Queue options" class="p-1 text-on-surface-variant hover:text-white">
+<span class="material-symbols-outlined text-[18px]">drag_handle</span>
+</button>
+</div>
+</div>
+<!-- Queue Item 3 -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-high/50 hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-11 h-11 rounded-lg overflow-hidden shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Album cover for Starboy electronic synthwave album, vivid red cross ambient lighting and moody futuristic cinematic portrait." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdS04hk-VmvyimcuU0Hn8oZwjUJI30G6yF6OmPfb7ETMRsptX2k2UsiDwud14Itj6MaY9mChUUVe-zL7y3ghBesIA5Ja2TQ27wcsOXwTFjv7SOGOBMEa83g5MNOzEwNQNlnXOYYQR--oTQrYJ3ui_aQ3-43NdIiVMralcWl8BsULVcNWhRE5plnm-X-MS044UbnJWydBujbayjz0ofwauGgnE-HB4UcIpYoDyNGh3cMx-ZTA5OxT2G"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Starboy</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">The Weeknd, Daft Punk</span>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant">03:50</span>
+<button aria-label="Queue options" class="p-1 text-on-surface-variant hover:text-white">
+<span class="material-symbols-outlined text-[18px]">drag_handle</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    // 1. Generate & Animate Dynamic Equalizer Bar Columns
+    const visualizer = document.getElementById('eq-visualizer');
+    if (visualizer) {
+      const barCount = 28;
+      const bars = [];
+      for (let i = 0; i < barCount; i++) {
+        const bar = document.createElement('div');
+        bar.className = 'w-full rounded-full transition-all duration-150 ease-out';
+        // Alternating gradient tones
+        const isCyan = i % 2 === 0;
+        bar.style.backgroundColor = isCyan ? '#4cd7f6' : '#a078ff';
+        bar.style.height = `${Math.floor(Math.random() * 24) + 6}px`;
+        bar.style.opacity = '0.85';
+        visualizer.appendChild(bar);
+        bars.push(bar);
+      }
+
+      let isPlaying = true;
+      let animInterval = setInterval(() => {
+        if (!isPlaying) return;
+        bars.forEach((bar, idx) => {
+          // Dynamic bell-curve-like spectrum modulation
+          const factor = Math.sin((idx / barCount) * Math.PI) * 20;
+          const randomVariance = Math.random() * 16;
+          const newHeight = Math.max(4, Math.min(36, factor + randomVariance));
+          bar.style.height = `${newHeight}px`;
+        });
+      }, 140);
+
+      // 2. Play/Pause Toggle with Vinyl disc animation state
+      const playBtn = document.getElementById('btn-play');
+      const playIcon = document.getElementById('play-icon');
+      const vinylDisc = document.getElementById('vinyl-disc');
+
+      let discRotation = 45;
+      let discRotator = setInterval(() => {
+        if (isPlaying && vinylDisc) {
+          discRotation = (discRotation + 1) % 360;
+          vinylDisc.style.transform = `rotate(${discRotation}deg)`;
+        }
+      }, 50);
+
+      if (playBtn && playIcon) {
+        playBtn.addEventListener('click', () => {
+          isPlaying = !isPlaying;
+          if (isPlaying) {
+            playIcon.textContent = 'pause';
+            playBtn.classList.add('shadow-[0_0_24px_rgba(160,120,255,0.6),0_0_10px_rgba(76,215,246,0.4)]');
+          } else {
+            playIcon.textContent = 'play_arrow';
+            playBtn.classList.remove('shadow-[0_0_24px_rgba(160,120,255,0.6),0_0_10px_rgba(76,215,246,0.4)]');
+            bars.forEach(b => b.style.height = '4px');
+          }
+        });
+      }
+    }
+
+    // 3. Favorite Button Active State Micro-interaction
+    const favBtn = document.getElementById('btn-fav');
+    if (favBtn) {
+      favBtn.addEventListener('click', () => {
+        const icon = favBtn.querySelector('.material-symbols-outlined');
+        const isFilled = icon.style.fontVariationSettings.includes("'FILL' 1");
+        if (isFilled) {
+          icon.style.fontVariationSettings = "'FILL' 0";
+          favBtn.classList.remove('text-tertiary-container', 'shadow-[0_0_16px_-2px_rgba(183,109,255,0.4)]');
+          favBtn.classList.add('text-on-surface-variant');
+        } else {
+          icon.style.fontVariationSettings = "'FILL' 1";
+          favBtn.classList.add('text-tertiary-container', 'shadow-[0_0_16px_-2px_rgba(183,109,255,0.4)]');
+          favBtn.classList.remove('text-on-surface-variant');
+        }
+      });
+    }
+
+    // 4. Scrubber Seek Interaction
+    const scrubContainer = document.getElementById('scrub-container');
+    const scrubProgress = document.getElementById('scrub-progress');
+    const scrubThumb = document.getElementById('scrub-thumb');
+    const timeCurrent = document.getElementById('time-current');
+
+    if (scrubContainer && scrubProgress && scrubThumb && timeCurrent) {
+      let isSeeking = false;
+      const totalSec = 208; // 03:28 in seconds
+
+      const updateScrub = (clientX) => {
+        const rect = scrubContainer.getBoundingClientRect();
+        const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+        const pctStr = `${(pct * 100).toFixed(1)}%`;
+        scrubProgress.style.width = pctStr;
+        scrubThumb.style.left = pctStr;
+
+        const currentSec = Math.floor(pct * totalSec);
+        const mins = String(Math.floor(currentSec / 60)).padStart(2, '0');
+        const secs = String(currentSec % 60).padStart(2, '0');
+        timeCurrent.textContent = `${mins}:${secs}`;
+      };
+
+      scrubContainer.addEventListener('mousedown', (e) => {
+        isSeeking = true;
+        updateScrub(e.clientX);
+      });
+      window.addEventListener('mousemove', (e) => {
+        if (isSeeking) updateScrub(e.clientX);
+      });
+      window.addEventListener('mouseup', () => {
+        isSeeking = false;
+      });
+
+      // Touch events support for mobile screen feel
+      scrubContainer.addEventListener('touchstart', (e) => {
+        if (e.touches.length > 0) updateScrub(e.touches[0].clientX);
+      });
+      scrubContainer.addEventListener('touchmove', (e) => {
+        if (e.touches.length > 0) updateScrub(e.touches[0].clientX);
+      });
+    }
+
+    // 5. Drawer Sheet Tabs Toggle (Lyrics vs Queue)
+    const tabLyrics = document.getElementById('tab-lyrics');
+    const tabQueue = document.getElementById('tab-queue');
+    const contentLyrics = document.getElementById('content-lyrics');
+    const contentQueue = document.getElementById('content-queue');
+
+    if (tabLyrics && tabQueue && contentLyrics && contentQueue) {
+      tabLyrics.addEventListener('click', () => {
+        tabLyrics.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        tabLyrics.classList.remove('text-on-surface-variant');
+        tabQueue.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        tabQueue.classList.add('text-on-surface-variant');
+
+        contentLyrics.classList.remove('hidden');
+        contentQueue.classList.add('hidden');
+      });
+
+      tabQueue.addEventListener('click', () => {
+        tabQueue.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        tabQueue.classList.remove('text-on-surface-variant');
+        tabLyrics.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        tabLyrics.classList.add('text-on-surface-variant');
+
+        contentQueue.classList.remove('hidden');
+        contentLyrics.classList.add('hidden');
+      });
+    }
+  })();
+</script></main></body></html>

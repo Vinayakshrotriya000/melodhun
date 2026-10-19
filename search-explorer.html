@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Sora:wght@400;600;700&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#13121c;color:#e4e1ef;}body{overscroll-behavior:none;font-family:'Plus Jakarta Sans',sans-serif;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes soundwave-pulse{0%,100%{transform:scaleY(0.35);}50%{transform:scaleY(1);}}@keyframes neon-glow{0%,100%{opacity:0.8;}50%{opacity:1;}}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: 'class', theme: { extend: { colors: { 'surface': '#13121c', 'surface-variant': '#34343e', 'on-primary': '#3c0091', 'secondary-fixed-dim': '#4cd7f6', 'surface-container': '#1f1f29', 'primary-container': '#a078ff', 'tertiary-fixed': '#f0dbff', 'on-surface-variant': '#cbc3d7', 'on-error-container': '#ffdad6', 'secondary-fixed': '#acedff', 'on-tertiary-fixed-variant': '#6900b3', 'surface-dim': '#13121c', 'secondary': '#4cd7f6', 'surface-bright': '#393843', 'primary-fixed-dim': '#d0bcff', 'error-container': '#93000a', 'on-secondary-fixed': '#001f26', 'on-tertiary-container': '#400071', 'inverse-on-surface': '#302f3a', 'tertiary': '#ddb7ff', 'inverse-primary': '#6d3bd7', 'on-primary-fixed-variant': '#5516be', 'secondary-container': '#03b5d3', 'on-primary-fixed': '#23005c', 'surface-container-lowest': '#0d0d17', 'primary-fixed': '#e9ddff', 'on-primary-container': '#340080', 'primary': '#d0bcff', 'on-tertiary': '#490080', 'surface-tint': '#d0bcff', 'on-secondary-fixed-variant': '#004e5c', 'on-secondary-container': '#00424e', 'background': '#13121c', 'on-tertiary-fixed': '#2c0051', 'on-surface': '#e4e1ef', 'tertiary-container': '#b76dff', 'inverse-surface': '#e4e1ef', 'tertiary-fixed-dim': '#ddb7ff', 'outline': '#958ea0', 'surface-container-low': '#1b1b24', 'surface-container-highest': '#34343e', 'outline-variant': '#494454', 'error': '#ffb4ab', 'on-background': '#e4e1ef', 'surface-container-high': '#292933', 'on-error': '#690005', 'on-secondary': '#003640' }, borderRadius: { 'DEFAULT': '0.25rem', 'lg': '0.5rem', 'xl': '0.75rem', 'full': '9999px' }, spacing: { 'space-md': '1rem', 'space-sm': '0.5rem', 'margin-mobile': '1rem', 'margin': '1rem', 'space-xs': '0.25rem', 'margin-desktop': '2.5rem', 'space-xl': '2.5rem', 'gutter': '1rem', 'gutter-mobile': '0.75rem', 'gutter-desktop': '1.5rem', 'space-lg': '1.5rem' }, fontFamily: { 'label-md': ['Space Grotesk'], 'body-lg': ['Plus Jakarta Sans'], 'display-hero-mobile': ['Sora'], 'body-sm': ['Plus Jakarta Sans'], 'label-sm': ['Space Grotesk'], 'display-hero': ['Sora'], 'headline-md': ['Sora'], 'headline-lg-mobile': ['Sora'], 'label-lg': ['Space Grotesk'], 'headline-sm': ['Sora'], 'headline-lg': ['Sora'], 'body-md': ['Plus Jakarta Sans'] }, fontSize: { 'label-md': ['12px', { lineHeight: '16px', letterSpacing: '0.04em', fontWeight: '500' }], 'body-lg': ['16px', { lineHeight: '24px', fontWeight: '400' }], 'display-hero-mobile': ['36px', { lineHeight: '44px', letterSpacing: '-0.02em', fontWeight: '700' }], 'body-sm': ['12px', { lineHeight: '18px', fontWeight: '400' }], 'label-sm': ['10px', { lineHeight: '14px', letterSpacing: '0.08em', fontWeight: '600' }], 'display-hero': ['56px', { lineHeight: '64px', letterSpacing: '-0.03em', fontWeight: '700' }], 'headline-md': ['22px', { lineHeight: '30px', letterSpacing: '-0.01em', fontWeight: '600' }], 'headline-lg-mobile': ['26px', { lineHeight: '34px', letterSpacing: '-0.01em', fontWeight: '600' }], 'label-lg': ['14px', { lineHeight: '18px', letterSpacing: '0.02em', fontWeight: '500' }], 'headline-sm': ['18px', { lineHeight: '26px', fontWeight: '600' }], 'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.02em', fontWeight: '600' }], 'body-md': ['14px', { lineHeight: '20px', fontWeight: '400' }] } } } }</script></head><body class="bg-surface text-on-surface min-h-screen flex flex-col antialiased selection:bg-secondary/30 selection:text-secondary"><header class="fixed top-0 inset-x-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_4px_20px_rgba(0,0,0,0.4)]"><div class="h-16 px-4 flex items-center justify-between gap-2"><div class="flex items-center gap-2"><img alt="MeloDhun Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XWviRYVHClgUMrVOWnYzaglUQv4vBylaE1xfNl0tH4cc9yS_xYO2-FKJM6C02XwGroNIH8ZcvdxsO1GKWX-jqSEUWaTpjgarnpzqU-unNA6Uydqj15b_4rNTJevqeGefY0GrmDp9IN37DFW1OEvt_MKG0MnvfG2IA5T9ix47qH0MHV8ICebh6nvbN8ON3JkOTB_ndc7ujjjjXg05hkG5QfrhUwAT6EQT7YFua8VfmYQ6pmU1zBP3xsPgc"/><div class="flex flex-col"><div class="flex items-center gap-1.5"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-white drop-shadow-[0_0_12px_rgba(160,120,255,0.6)]">MeloDhun</span><span class="px-1.5 py-0.5 rounded-full bg-secondary/15 text-secondary font-label-sm text-label-sm uppercase tracking-wider shadow-[0_0_8px_rgba(76,215,246,0.35)]">Hi-Fi</span></div><span class="hidden font-label-sm text-label-sm text-on-surface-variant">Search &amp; Explore</span></div></div><div class="flex items-center gap-2"><button class="h-7 px-2.5 rounded-full bg-surface-container-high/80 hover:bg-surface-container-highest transition-colors flex items-center gap-1 font-label-sm text-label-sm text-secondary-fixed-dim"><span class="material-symbols-outlined text-[13px]">translate</span><span>EN/HI</span></button><button aria-label="Search" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-secondary transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Notifications" class="w-10 h-10 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-secondary shadow-[0_0_6px_#4cd7f6]"></span></button><button aria-label="User Profile" class="w-9 h-9 rounded-full ring-2 ring-primary/40 p-0.5 ml-0.5"><img alt="Profile" class="w-full h-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeZZFKirLcnELVvZLprp9_Uk61_HkozkWT20y0R_ohhAMdDLorbHL2bu565nRv_50Qhb5KJmSgysnFXjjUGUliAM-7M8zJF-EAu5bCHKbT0JRrD4xcRVDOV5scLQGFhwpmDMIPKrnqC_ElGiSRrm4Q6J0J2F4v5KCoi3_yBxTBRlnr7JenoPtS2rT6kSeVicHSIA4-fQ5swbLoi2aOpe7u5izhmHmwHYAcRMtKvCwAjrdKoMaR1h5N"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-36 bg-surface min-h-screen"><div class="flex flex-col w-full px-4 space-y-6">
+<!-- Dynamic Acoustic Aura & Search Control -->
+<div class="relative w-full pt-1">
+<div class="relative flex items-center bg-surface-container-high rounded-full px-3.5 py-1.5 shadow-lg shadow-surface-container-lowest/40">
+<span class="material-symbols-outlined text-secondary text-[22px] mr-2">search</span>
+<input class="w-full bg-transparent text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none truncate py-1.5" id="regional-search-input" placeholder="Search songs, artists, Hindi, Punjabi, Haryanvi, Pop..." type="text"/>
+<div class="flex items-center space-x-1 pl-1">
+<button aria-label="Voice Search" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-secondary hover:bg-surface-variant/40 transition-colors" id="voice-search-btn">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+<button aria-label="Audio &amp; Region Filters" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-variant/40 transition-colors" id="filter-tune-btn">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Multi-Language Quick Selector (Horizontal Carousel) -->
+<div class="flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Dialect Filter</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Selected: <span class="text-white" id="active-lang-label">All</span></span>
+</div>
+<div class="flex space-x-2 overflow-x-auto no-scrollbar py-1 -mx-4 px-4">
+<button class="lang-chip flex-shrink-0 px-3.5 py-1 rounded-full bg-secondary text-on-secondary font-label-md text-label-md shadow-md shadow-secondary/20 transition-transform active:scale-95" data-lang="All">All Vibe</button>
+<button class="lang-chip flex-shrink-0 px-3.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-white font-label-md text-label-md transition-transform active:scale-95" data-lang="हिन्दी">हिन्दी</button>
+<button class="lang-chip flex-shrink-0 px-3.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-white font-label-md text-label-md transition-transform active:scale-95" data-lang="ਪੰਜਾਬੀ">ਪੰਜਾਬੀ</button>
+<button class="lang-chip flex-shrink-0 px-3.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-white font-label-md text-label-md transition-transform active:scale-95" data-lang="हरियाणवी">हरियाणवी</button>
+<button class="lang-chip flex-shrink-0 px-3.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-white font-label-md text-label-md transition-transform active:scale-95" data-lang="English">English</button>
+<button class="lang-chip flex-shrink-0 px-3.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-white font-label-md text-label-md transition-transform active:scale-95" data-lang="বাংলা">বাংলা</button>
+<button class="lang-chip flex-shrink-0 px-3.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-white font-label-md text-label-md transition-transform active:scale-95" data-lang="தமிழ்">தமிழ்</button>
+<button class="lang-chip flex-shrink-0 px-3.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-white font-label-md text-label-md transition-transform active:scale-95" data-lang="తెలుగు">తెలుగు</button>
+</div>
+</div>
+<!-- Trending Heatsearches -->
+<div class="flex flex-col space-y-2.5">
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary">local_fire_department</span>
+<h2 class="font-headline-sm text-headline-sm text-white tracking-tight">Trending Right Now</h2>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="trend-tag flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-[0.98] transition cursor-pointer">
+<div class="flex items-center space-x-2 min-w-0">
+<span class="w-5 h-5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm flex items-center justify-center flex-shrink-0 font-bold">1</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-white truncate font-medium">Brown Munde</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">AP Dhillon</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span>
+</div>
+<div class="trend-tag flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-[0.98] transition cursor-pointer">
+<div class="flex items-center space-x-2 min-w-0">
+<span class="w-5 h-5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm flex items-center justify-center flex-shrink-0 font-bold">2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-white truncate font-medium">Kesariya</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Arijit Singh</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span>
+</div>
+<div class="trend-tag flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-[0.98] transition cursor-pointer">
+<div class="flex items-center space-x-2 min-w-0">
+<span class="w-5 h-5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm flex items-center justify-center flex-shrink-0 font-bold">3</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-white truncate font-medium">System Pe System</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">R Masstt</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_up</span>
+</div>
+<div class="trend-tag flex items-center justify-between p-2.5 rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-[0.98] transition cursor-pointer">
+<div class="flex items-center space-x-2 min-w-0">
+<span class="w-5 h-5 rounded-full bg-primary/20 text-primary font-label-sm text-label-sm flex items-center justify-center flex-shrink-0 font-bold">4</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-white truncate font-medium">Levitating</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Dua Lipa</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[16px] text-secondary">trending_flat</span>
+</div>
+</div>
+</div>
+<!-- Browse by Regional Culture Showcase (The Hero Cultural Mosaic) -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-baseline justify-between">
+<div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-white tracking-tight">Regional Frequencies</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sonic heritage tuned to authentic grassroots culture</p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">12 Regions</span>
+</div>
+<!-- Cultural Grid Cards -->
+<div class="grid grid-cols-1 gap-3">
+<!-- Hindi Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-high p-4 flex flex-col justify-between shadow-md active:scale-[0.99] transition">
+<div class="absolute -right-4 -bottom-6 w-32 h-32 rounded-full bg-tertiary-container/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex items-start justify-between">
+<div>
+<span class="px-2 py-0.5 rounded bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">Most Streamed</span>
+<h3 class="font-headline-md text-headline-md text-white mt-1">Hindi Soul</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bollywood, Indie, Ghazal, Retro 90s</p>
+</div>
+<div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Vibrant artistic close-up of classical Indian sitar and acoustic instruments glowing under deep purple stage light, neon luminescence, hyper-detailed music album cover aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZIhljbhi18mgcUiFkj19XlIk30cQzLN6edZWyCTRJpSFLlVTx5RPmPdDClBhtL9JKkYg9SAU5XtaCQCNUaCG-wd7RFklwKcuha5Xe6yMNoNBUr59Gv1u1mGqzDfRvfsliuBR-vZx2Ct-MxbI0qcZ-_OYCXLtIuyFDoPMoswzyhpvyyYo_kqLtpFHC0DLbyCuPW3ji92le41J3T0kY7mGTkaJAmo0vUrjfrFbio-Ke0ebLzxpaCx-z"/>
+</div>
+</div>
+<div class="relative z-10 flex flex-wrap gap-1.5 mt-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Acoustic Bollywood</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Coke Studio Indie</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Late Night Ghazal</span>
+</div>
+</div>
+<!-- Punjabi Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-high p-4 flex flex-col justify-between shadow-md active:scale-[0.99] transition">
+<div class="absolute -right-4 -bottom-6 w-32 h-32 rounded-full bg-secondary-container/25 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex items-start justify-between">
+<div>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">High Octane</span>
+<h3 class="font-headline-md text-headline-md text-white mt-1">Punjabi Wave</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Bhangra, Desi Hip Hop, Urban Dhol</p>
+</div>
+<div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Dynamic energetic Punjabi dhol drum illuminated with neon teal and cyan lasers, urban desi hip hop style, dark moody aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGr7Sd5El4D3ITmzQZtsOOizdtL37fW1JapTZ5sKA26N7bEWkGPQfcGcouKpjjsQFzEaX9z6HVwZ4Y1yWlpCsdbsFsTgdWbhvM8qlR6K1x7m2NPgpOhRJxpSn4-KGQhYIXNr6gJpGmmR0dpLCMid1lSWG3zWZuPmqoLe5stLf1Z4HbJBz101_y0xSwk0K3qaVr9YojskpFNJmiKVlVWiMpGGZ1hhY1nT8tWkmw2mus5_Zw8Q561V4R"/>
+</div>
+</div>
+<div class="relative z-10 flex flex-wrap gap-1.5 mt-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Sub-Woofer Bass</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Drill Punjab</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Romantic Sufi</span>
+</div>
+</div>
+<!-- Haryanvi Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-high p-4 flex flex-col justify-between shadow-md active:scale-[0.99] transition">
+<div class="absolute -right-4 -bottom-6 w-32 h-32 rounded-full bg-primary-container/20 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex items-start justify-between">
+<div>
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold uppercase tracking-wider">Heavy Beats</span>
+<h3 class="font-headline-md text-headline-md text-white mt-1">Haryanvi Power</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Ragani, DJ Bass, Desi Folk, Rap</p>
+</div>
+<div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Haryanvi folk music performance elements fused with futuristic neon electronic DJ equipment, purple and cyan spotlights, vibrant and powerful atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvNC-ZCjSWvKy6zEyub3uc_uGeDyPOlAVe7xgui_UbPdJcsfVar-i-CUX79nnny7A_xMlfVvx_AIMUxlroT-sKcFth0coIF_Qqq_Zv_vJC5RhYDb398obxfVPLSHYNz0tvRe_hryCXVmtBO2hqr2DhONqAuMmzh3kcWHNp2_m7CRol37Ug3RDrzDdlotzKf47tscBupeI0aDfkuldF_0uq6LtWg5crTPMS2NoVV3t5GmrE_ZUWXHce"/>
+</div>
+</div>
+<div class="relative z-10 flex flex-wrap gap-1.5 mt-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Bhoomi Ragani</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Club Haryanvi</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Swag Rap</span>
+</div>
+</div>
+<!-- English & Global Card -->
+<div class="relative overflow-hidden rounded-2xl bg-surface-container-high p-4 flex flex-col justify-between shadow-md active:scale-[0.99] transition">
+<div class="absolute -right-4 -bottom-6 w-32 h-32 rounded-full bg-secondary/15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex items-start justify-between">
+<div>
+<span class="px-2 py-0.5 rounded bg-surface-variant text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider">Spatial Hi-Fi</span>
+<h3 class="font-headline-md text-headline-md text-white mt-1">Global Anthems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pop, Synthwave, Hip-Hop, Cyber-EDM</p>
+</div>
+<div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Abstract cybernetic synth equalizer with futuristic audio sound waves, neon purple and bright electric cyan lighting, dark atmospheric studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh8ujtCHQipNwwA7FlOUbjmRQtD_gQR3djwphVC5XGLOjN7KNlfcqqgygQT4pN0cAlcqlMLbpdXOF6Cx_htpkAd0RgpDxn5r-_0Dpc3uCKncAKrCd3cQ8_nER3641IXW_DR-04DF8snmqdWCy2ZnDS-YtZrbnVXe_Jm_2Nab6RiwuSqH8-c0ds3QKhA4Ra274Fy5QIsnYey2X2LV8UhyvCRI1VvcGWDkBVXPQclM78pa5LqGOXy_MN"/>
+</div>
+</div>
+<div class="relative z-10 flex flex-wrap gap-1.5 mt-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Billboard 100</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Cyber Electro</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface text-label-sm font-label-sm">Atmos Pop</span>
+</div>
+</div>
+</div>
+<!-- Regional Specials Carousel -->
+<div class="pt-2">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-lg text-label-lg font-semibold text-white">Regional Flavours</span>
+<button class="font-label-sm text-label-sm text-secondary hover:underline">Explore All</button>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="p-2.5 rounded-xl bg-surface-container flex flex-col items-center text-center active:scale-95 transition">
+<span class="material-symbols-outlined text-secondary text-[24px] mb-1">graphic_eq</span>
+<span class="font-label-md text-label-md font-semibold text-white">Bhojpuri</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Desi EDM</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container flex flex-col items-center text-center active:scale-95 transition">
+<span class="material-symbols-outlined text-tertiary text-[24px] mb-1">library_music</span>
+<span class="font-label-md text-label-md font-semibold text-white">Tamil</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Anirudh Hits</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container flex flex-col items-center text-center active:scale-95 transition">
+<span class="material-symbols-outlined text-primary text-[24px] mb-1">headphones</span>
+<span class="font-label-md text-label-md font-semibold text-white">Telugu</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mass Beats</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container flex flex-col items-center text-center active:scale-95 transition">
+<span class="material-symbols-outlined text-primary text-[24px] mb-1">music_note</span>
+<span class="font-label-md text-label-md font-semibold text-white">Bengali</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Rabindra &amp; Rock</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container flex flex-col items-center text-center active:scale-95 transition">
+<span class="material-symbols-outlined text-secondary text-[24px] mb-1">radio</span>
+<span class="font-label-md text-label-md font-semibold text-white">Marathi</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ajay-Atul Dhol</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container flex flex-col items-center text-center active:scale-95 transition">
+<span class="material-symbols-outlined text-tertiary text-[24px] mb-1">celebration</span>
+<span class="font-label-md text-label-md font-semibold text-white">Gujarati</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Urban Garba</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Instant Search & Regional Discovery Hub -->
+<div class="flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">queue_music</span>
+<h2 class="font-headline-sm text-headline-sm text-white">Top Regional Picks</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dolby Atmos Hi-Fi</span>
+</div>
+<!-- Recommended Tracks Stack -->
+<div class="flex flex-col space-y-2">
+<!-- Track 1 -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-high/60 active:bg-surface-container-high transition">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Cover artwork for energetic Punjabi bhangra hip hop track, featuring vibrant neon street graffiti in violet and electric cyan colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHrPiIOqQMU33fEec_WM4cGY2BIcsC3fQBfoyMUA2eF17c8rWjyrL8c_IdaXc2kwbc1hQDa-2NKfdpWWUtu6yjWYHapGy9qBLEHU85YKcsRmmaA7G_GnnZ9HSxrnI5b9jNRw1RdkiUYGVIxGi7bUAsukmYDHMxdYX4NlGZoQdxjqKyLH45-sPfHQltrMc6nKofid9xuqAWWWbn-d75ecLiG4RALGKL45FD8OshFDevVelCWh-1ZekN"/>
+<button class="absolute inset-0 m-auto w-7 h-7 rounded-full bg-secondary/80 text-on-secondary flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-white truncate">Excuses</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">AP Dhillon, Gurinder Gill • Punjabi</span>
+</div>
+</div>
+<div class="flex items-center space-x-1 pl-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2:56</span>
+<button aria-label="Play track" class="w-8 h-8 rounded-full flex items-center justify-center text-secondary hover:text-white transition">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+</button>
+<button aria-label="More options" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-white transition">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Track 2 -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-high/60 active:bg-surface-container-high transition">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Cover art of a serene Indian nocturnal river bank with spiritual lamp reflection, deep ambient indigo aesthetic with hints of gold, warm aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATafAinUzXmME61hDHDznQmBlWW0QdAcnqZ64rfpKQG7SoDjDtlo6dHiuGLgBuffO0CKVk0lHIHaELLm9i3zKcxSA_q1p87w2tYeUUN7IPgAXViL1xuBv4flycATctdCnAxfBRtdYfcDh_m3fgkBhWUN5rGegijlf3htQevw5ghUpWhDaVBJM1OZk4Hlm_H_5OPewmnscmfoCZG9LaLpkHjag-VKgseg18cfi1qQvyzNdjiRjit6a8"/>
+<button class="absolute inset-0 m-auto w-7 h-7 rounded-full bg-secondary/80 text-on-secondary flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-white truncate">Apna Bana Le</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Arijit Singh, Sachin-Jigar • Hindi</span>
+</div>
+</div>
+<div class="flex items-center space-x-1 pl-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">4:21</span>
+<button aria-label="Play track" class="w-8 h-8 rounded-full flex items-center justify-center text-secondary hover:text-white transition">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+</button>
+<button aria-label="More options" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-white transition">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Track 3 -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-high/60 active:bg-surface-container-high transition">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="relative w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 bg-surface-variant">
+<img class="w-full h-full object-cover" data-alt="Album art depicting heavy bass speaker towers glowing under purple laser beams, intense Haryanvi club beat energy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfc8T897ni0Is8TYxQCoQ9hkoPiIt3y-GpBaV8KBa6ep8wrbTRN553J7V_DjFHizKF06FB4dt1jrHcjK8uTwAA115eMEJ2-ht653P3dIiySXEDPp3HH8bON10d3t2suMgIH3yEloQMZZKoADegeubK2lyswRwJXvMrAuXvLk6rnLteQWRt8_rdZX3AkZUHLw3BeHBkTIC7Xx6B5D3JGkyEIMOVOOGwU9ieet19tbByhkk-8cPPz09Q"/>
+<button class="absolute inset-0 m-auto w-7 h-7 rounded-full bg-secondary/80 text-on-secondary flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg font-semibold text-white truncate">Moto</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Diler Kharkiya • Haryanvi Beats</span>
+</div>
+</div>
+<div class="flex items-center space-x-1 pl-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">3:12</span>
+<button aria-label="Play track" class="w-8 h-8 rounded-full flex items-center justify-center text-secondary hover:text-white transition">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+</button>
+<button aria-label="More options" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:text-white transition">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Regional Maestros (Artists Section) -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-white">Iconic Artists</h2>
+<span class="font-label-sm text-label-sm text-tertiary">Verified Creators</span>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<!-- Artist 1 -->
+<div class="flex flex-col items-center p-3 rounded-2xl bg-surface-container text-center space-y-2">
+<div class="w-16 h-16 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-primary to-secondary">
+<img class="w-full h-full rounded-full object-cover" data-alt="Portrait photo of a soulful Indian male singer in recording studio with neon headphones, artistic atmospheric lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDprQq_cEINoBX5IC1PSyl7-uZYdi-bxyXYsOQQQLWMfqKlcPbHiaSbm1c26pDR5HQOf36hdmnxvGR6OpcwVbczgM18RSkKTjQHPuBWAT6Nyac7GwAdwJf2-YWMkbQ2jWhfnhTVAud-5Ml6ACfXXrbBhNo1hzjlWPwx_f0NifWhQMoGluCQovraBPPu7IiM-zw2EOctPUoDu0acRfxD_32bdMa5QbAbjV9aqXlwmN5uIEDZTGAdKUT2"/>
+</div>
+<div class="flex flex-col min-w-0 w-full">
+<span class="font-label-md text-label-md font-semibold text-white truncate">Arijit Singh</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">42M Listeners</span>
+</div>
+<button class="follow-btn w-full py-1 rounded-full bg-surface-container-high text-secondary hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm font-semibold transition-colors">
+          Follow
+        </button>
+</div>
+<!-- Artist 2 -->
+<div class="flex flex-col items-center p-3 rounded-2xl bg-surface-container text-center space-y-2">
+<div class="w-16 h-16 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-secondary to-tertiary">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of a cool Punjabi urban rapper wearing sunglasses, illuminated by neon purple stage lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDVxqTx8yDK4Ux2XZyhhnt95rotIHTUeruJXCtvPSm5wJH-q8qu69HUcradMAw7wiF5Y0I5mzvOnV0L5mICkZOgQFGwNFRlTGxzhkQ_mEkdIwxvpG24tATLgUpz4-Hinj0BhuEdc8y9h7Z5wGOqFxdsDGEKa1g5BoZto3NMkcwZGzGfSZIUVKNoGp0lpq1327-hK2jFU36vdPqoXQAAWR_MMCqlmg_WLXrhlRVde1iH8VDauYBvniR"/>
+</div>
+<div class="flex flex-col min-w-0 w-full">
+<span class="font-label-md text-label-md font-semibold text-white truncate">AP Dhillon</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">18M Listeners</span>
+</div>
+<button class="follow-btn w-full py-1 rounded-full bg-surface-container-high text-secondary hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm font-semibold transition-colors">
+          Follow
+        </button>
+</div>
+<!-- Artist 3 -->
+<div class="flex flex-col items-center p-3 rounded-2xl bg-surface-container text-center space-y-2">
+<div class="w-16 h-16 rounded-full overflow-hidden p-0.5 bg-gradient-to-tr from-tertiary to-primary">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of modern Indian composer producer working on glowing digital audio synthesizer workstations in a high tech studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAd-_FGuwbRdCD-cSkhMFIKhBGTt_Ye0BCvzVTebM-k0VMtBTjdsKONT1fV4ubAYydCTafQD6rSCpWm_tOTKZaHbirfpSPqkumw8I_wH6WdyupiZ9Hf3hIewEik1SbzP-OC0iwKfpouO_iVkHjn6ScIC83kYZsZUNX0x60dMZ_ZdATC1mirtiL2bC_SBUFhLYghtfnRE-A39nff-eMKGwZhERW4_YqHf5pLE1OYjLwT5KlW2YLP-04k"/>
+</div>
+<div class="flex flex-col min-w-0 w-full">
+<span class="font-label-md text-label-md font-semibold text-white truncate">Anirudh R.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">25M Listeners</span>
+</div>
+<button class="follow-btn w-full py-1 rounded-full bg-surface-container-high text-secondary hover:bg-secondary hover:text-on-secondary font-label-sm text-label-sm font-semibold transition-colors">
+          Follow
+        </button>
+</div>
+</div>
+</div>
+<!-- Mood & Genre Cybernetic Visual Grid -->
+<div class="flex flex-col space-y-3 pb-4">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-white">Moods &amp; Sonics</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Curated sound environments</p>
+</div>
+<span class="material-symbols-outlined text-secondary text-[20px]">explore</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Mood Card 1 -->
+<div class="relative h-28 rounded-2xl overflow-hidden p-3 flex flex-col justify-between shadow-md active:scale-95 transition" data-alt="Abstract neon cyber violet soundwaves expanding across an empty digital landscape with misty deep space mood" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA95lfWf2va0TqFnx1epwb2l8w00VNa95mv-QlQrOf2R884qSNGT68QfHOV0w_NfooqIdC8MfggbKbTazboUGieF1FUWvd8jM9--TQ0B-pgieRvJXdoCsAlsR7woRXWab5AbZgADElGuuZOmDwxaRpjILK9ZruKOkcXxYGCe04qoiY7b2bVGwn18QvnfCRq801bepdb9ZbCt755e0Warl6REHVHvNQGNlZ6uxWFBIHhRktLSuz0YyzH')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex justify-between items-start">
+<span class="p-1 rounded-lg bg-surface-container-lowest/60 text-secondary backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">nightlife</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container/70 px-2 py-0.5 rounded-full">Club Bass</span>
+</div>
+<div class="relative z-10">
+<span class="font-headline-sm text-headline-sm text-white drop-shadow">Late Night Drive</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Punjabi Drill &amp; Synth</p>
+</div>
+</div>
+<!-- Mood Card 2 -->
+<div class="relative h-28 rounded-2xl overflow-hidden p-3 flex flex-col justify-between shadow-md active:scale-95 transition" data-alt="Golden twilight over traditional Indian village fields with gentle acoustic luminescence and calm peaceful aesthetic" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZUY7KB-tYrc8G6pDjB-e0TVXbmC2B0TU-zXxuDhdkRsJmscfUElgoYJZcR9Yay5-gkLfqUk965l9NurtJrEJKkzLDR7LiccY3HjSuqmexmA8-LYf_6sjHs9vLY5QkAtrN7IAdsOh6slrwONyzpAmLXkxsNxfgrgAsTOWBt9c0wexVqcWfPuPftXBPf2eWdmynyfLSpdiFNb4WXGSyZwa9rTEtd1fE7BOIlr0fLP5P1WqWtqOEezS6')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex justify-between items-start">
+<span class="p-1 rounded-lg bg-surface-container-lowest/60 text-tertiary backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">spa</span>
+</span>
+<span class="font-label-sm text-label-sm text-tertiary bg-surface-container/70 px-2 py-0.5 rounded-full">Sufi Chill</span>
+</div>
+<div class="relative z-10">
+<span class="font-headline-sm text-headline-sm text-white drop-shadow">Soulful Sukoon</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Acoustic &amp; Classical</p>
+</div>
+</div>
+<!-- Mood Card 3 -->
+<div class="relative h-28 rounded-2xl overflow-hidden p-3 flex flex-col justify-between shadow-md active:scale-95 transition" data-alt="Dynamic workout gym environment filled with energetic electric cyan laser bars and high intensity audio vibe" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDUXU0M3u7oqeYxxuDP328CIW9-aLmgVXaLDZ4RDi5XGnAkXGeu6Y3PjrAZaqWNmyG8KzfX0V9yw27_849lWzI1oa05M-jxGfF89MOOGstde7fguuGvLmo4n7scDINu65yi_b8itytY-U-CIwhMColvDodymd6FCbSLvo1H8PIPyZShP2SGR-e7xDB7ApVfuJaKp0eG0HVLFJGZmuUmagDsBT2A5CEW1aXbIbmiq8y_RKE0WMytC_mz')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex justify-between items-start">
+<span class="p-1 rounded-lg bg-surface-container-lowest/60 text-primary backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">fitness_center</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary bg-surface-container/70 px-2 py-0.5 rounded-full">140 BPM</span>
+</div>
+<div class="relative z-10">
+<span class="font-headline-sm text-headline-sm text-white drop-shadow">Desi Beast Workout</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Haryanvi &amp; Punjabi Drill</p>
+</div>
+</div>
+<!-- Mood Card 4 -->
+<div class="relative h-28 rounded-2xl overflow-hidden p-3 flex flex-col justify-between shadow-md active:scale-95 transition" data-alt="Retro 90s cassette tapes and glowing retro wave sunset lighting, warm orange and purple nostalgic music atmosphere" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCeGRUb9vBZAdka7OpxXJY93Ahpz5tmVEQGrfyxg5AdN7xwQPufWKgo1xzFbMltrP75tSBb7JJzVWA53FarnCG1gGJWBHVE6Ssn4we5NUIPQHjGXpqfV7SF4VUVepWH8kkgOs7eAMcxs-bdUu6vJL7yXexXgULCrdJlicKAT-Vdjx2X89f17MR645y2iUqKRi5vx1bW-nHDmXuAOPUZKPsHlmPJOqyMvyLXPSQKgXmv18Dn4_XkRZF')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex justify-between items-start">
+<span class="p-1 rounded-lg bg-surface-container-lowest/60 text-secondary backdrop-blur-md">
+<span class="material-symbols-outlined text-[16px]">album</span>
+</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container/70 px-2 py-0.5 rounded-full">Cassette Hi-Fi</span>
+</div>
+<div class="relative z-10">
+<span class="font-headline-sm text-headline-sm text-white drop-shadow">Golden 90s Era</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Nostalgic Bollywood Melodies</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interactions for Language Filter Chips
+  const chips = document.querySelectorAll('.lang-chip');
+  const activeLabel = document.getElementById('active-lang-label');
+  const searchInput = document.getElementById('regional-search-input');
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.classList.remove('bg-secondary', 'text-on-secondary', 'shadow-md', 'shadow-secondary/20');
+        c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+      });
+      chip.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      chip.classList.add('bg-secondary', 'text-on-secondary', 'shadow-md', 'shadow-secondary/20');
+      
+      const lang = chip.getAttribute('data-lang');
+      if (activeLabel) activeLabel.textContent = lang;
+      if (searchInput && lang !== 'All') {
+        searchInput.value = lang + " Top Hits";
+      } else if (searchInput) {
+        searchInput.value = '';
+      }
+    });
+  });
+
+  // Trending tag quick search fills
+  const trendTags = document.querySelectorAll('.trend-tag');
+  trendTags.forEach(tag => {
+    tag.addEventListener('click', () => {
+      const title = tag.querySelector('span.font-label-md')?.innerText;
+      if (title && searchInput) {
+        searchInput.value = title;
+        searchInput.focus();
+      }
+    });
+  });
+
+  // Follow / Unfollow interactive button state
+  const followBtns = document.querySelectorAll('.follow-btn');
+  followBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (btn.textContent.trim() === 'Follow') {
+        btn.textContent = 'Following';
+        btn.classList.remove('text-secondary', 'bg-surface-container-high');
+        btn.classList.add('bg-secondary', 'text-on-secondary');
+      } else {
+        btn.textContent = 'Follow';
+        btn.classList.remove('bg-secondary', 'text-on-secondary');
+        btn.classList.add('text-secondary', 'bg-surface-container-high');
+      }
+    });
+  });
+
+  // Mic voice simulated feedback
+  const micBtn = document.getElementById('voice-search-btn');
+  if (micBtn) {
+    micBtn.addEventListener('click', () => {
+      if (searchInput) {
+        searchInput.placeholder = "Listening for regional tune...";
+        micBtn.classList.add('text-secondary', 'animate-pulse');
+        setTimeout(() => {
+          searchInput.placeholder = "Search songs, artists, Hindi, Punjabi, Haryanvi, Pop...";
+          micBtn.classList.remove('text-secondary', 'animate-pulse');
+        }, 3000);
+      }
+    });
+  }
+</script></main><div class="fixed bottom-16 inset-x-0 z-40 px-3 pb-2 pointer-events-none"><div class="pointer-events-auto rounded-xl bg-surface-container/90 backdrop-blur-2xl shadow-[0_8px_32px_rgba(0,0,0,0.6)] overflow-hidden"><div class="w-full h-1 bg-surface-variant/40 relative"><div class="absolute left-0 top-0 bottom-0 w-[42%] bg-gradient-to-r from-primary to-secondary shadow-[0_0_8px_#4cd7f6]"></div></div><div class="h-14 px-3 flex items-center justify-between gap-3"><div class="flex items-center gap-3 overflow-hidden flex-1"><div class="w-9 h-9 rounded-lg bg-surface-container-high flex-shrink-0 relative overflow-hidden flex items-center justify-center"><div class="flex items-end justify-center gap-0.5 h-4 w-5"><span class="w-0.5 bg-secondary rounded-full h-4 animate-[soundwave-pulse_1s_ease-in-out_infinite]"></span><span class="w-0.5 bg-secondary rounded-full h-2.5 animate-[soundwave-pulse_0.8s_ease-in-out_infinite_0.15s]"></span><span class="w-0.5 bg-secondary rounded-full h-3.5 animate-[soundwave-pulse_1.2s_ease-in-out_infinite_0.3s]"></span><span class="w-0.5 bg-secondary rounded-full h-2 animate-[soundwave-pulse_0.7s_ease-in-out_infinite_0.45s]"></span></div></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5 truncate"><span class="font-label-lg text-label-lg font-semibold text-white truncate">Kesariya</span><span class="font-label-sm text-label-sm text-secondary truncate">• Arijit Singh</span></div><span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary-container inline-block shadow-[0_0_4px_#03b5d3]"></span>Spatial Dolby Atmos</span></div></div><div class="flex items-center gap-1"><button aria-label="Favorite" class="w-11 h-11 flex items-center justify-center text-primary hover:text-primary-container transition-colors"><span class="material-symbols-outlined text-[20px] text-tertiary">favorite</span></button><button aria-label="Play or Pause" class="w-10 h-10 rounded-full bg-gradient-to-br from-primary-container to-inverse-primary text-white flex items-center justify-center shadow-[0_0_16px_rgba(160,120,255,0.5)] active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">pause</span></button><button aria-label="Next Song" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-white transition-colors"><span class="material-symbols-outlined text-[20px]">skip_next</span></button></div></div></div></div><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-2xl shadow-[0_-4px_24px_rgba(0,0,0,0.5)]" data-active-classes="text-secondary font-bold [&amp;_span.material-symbols-outlined]:text-secondary [&amp;_span.material-symbols-outlined]:drop-shadow-[0_0_8px_rgba(76,215,246,0.6)]"><div class="flex justify-around items-center h-16 px-1"><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-on-surface-variant transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full transition-colors text-secondary font-bold [&amp;_span.material-symbols-outlined]:text-secondary [&amp;_span.material-symbols-outlined]:drop-shadow-[0_0_8px_rgba(76,215,246,0.6)]" data-path="search-&amp;-explore" href="#"><span class="material-symbols-outlined text-[22px]">travel_explore</span><span class="font-label-sm text-label-sm">Explore</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-on-surface-variant transition-colors" data-path="trending-&amp;-regional" href="#"><span class="material-symbols-outlined text-[22px]">local_fire_department</span><span class="font-label-sm text-label-sm">Trending</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-on-surface-variant transition-colors" data-path="my-library" href="#"><span class="material-symbols-outlined text-[22px]">queue_music</span><span class="font-label-sm text-label-sm">Library</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-on-surface-variant transition-colors" data-path="premium-vip" href="#"><span class="material-symbols-outlined text-[22px]">workspace_premium</span><span class="font-label-sm text-label-sm text-tertiary-fixed">VIP</span></a></div></nav></body></html>
